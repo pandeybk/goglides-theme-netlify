@@ -3,6 +3,14 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 paginate = 4
 
+[outputFormats]
+[outputFormats.SearchIndex]
+baseName = "search"
+mediaType = "application/json"
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
 [taxonomies]
 category = "categories"
 subcategory = "subcategories"
