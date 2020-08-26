@@ -3,9 +3,9 @@ title: "Computer"
 image: "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899728_960_720.png"
 price: "900"
 categories: 
-    - Men's
-    - Sports
-subcategories: ["Clothing", "Exercise"]
+    - Electronics
+subcategories: 
+    - Computers
 details:
     - Brand- Dell
     - Screen Size- 18"

@@ -5,7 +5,9 @@ price: "900"
 categories: 
     - Men's
     - Sports
-subcategories: ["Clothing", "Exercise"]
+subcategories: 
+    - Clothing
+    - Exercise
 details:
     - Brand- Dell
     - Screen Size- 18"
