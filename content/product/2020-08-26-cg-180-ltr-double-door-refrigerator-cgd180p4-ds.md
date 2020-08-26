@@ -3,7 +3,7 @@ title: CG 180 Ltr. Double Door Refrigerator CGD180P4.DS
 image: /img/cg.jpg
 price: "27000"
 categories:
-  - Kitchen Appliances
+  - electronics
 subcategories:
   - Refrigerator
 brand: CG
