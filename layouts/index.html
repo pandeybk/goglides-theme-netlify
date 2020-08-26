@@ -1,0 +1,1058 @@
+{{ define "main" }}
+<body>
+
+
+
+<!-- home slider -->
+<section class="home-slider">
+    <h1 class="d-none">Electronics</h1>
+    <div class="container">
+        <div class="d-flex">
+
+            <!-- category -->
+            <div class="category-wrapper">
+                <div class="p-3">
+                    <strong><i class="fas fa-bars mx-2"></i> All Categories</strong>
+                </div>
+                {{ partial "common/categoryList.html" . }}
+            </div>
+
+            <!-- slider -->
+            {{ partial "home/slider.html" . }}
+
+            <!-- banner -->
+            <div class="flex-wrap-right bg-light">
+
+                <img src="https://cdn.pixabay.com/photo/2019/03/25/10/36/marketing-4079915_960_720.jpg" alt=""
+                     class="w-100 offer-image">
+                <img src="https://cdn.pixabay.com/photo/2019/11/06/14/27/cyber-monday-social-media-post-4606229_960_720.jpg"
+                     alt="" class="w-100 offer-image">
+
+                <!-- <img src="https://cdn.pixabay.com/photo/2020/04/23/19/24/symbol-5083735_960_720.png" alt="" class="w-100 offer-image"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2016/02/03/12/43/percent-1176978_960_720.jpg" alt="" class="w-100 offer-image"> -->
+
+                <!-- <img src="https://cdn.pixabay.com/photo/2015/09/20/08/04/megaphone-948015_960_720.jpg" alt="" class="w-100 offer-image">
+                <img src="https://cdn.pixabay.com/photo/2018/10/16/10/32/black-3751144_960_720.jpg" alt="" class="w-100 offer-image"> -->
+                <!-- <img src="https://cdn.pixabay.com/photo/2018/10/17/08/52/black-3753444_960_720.jpg" alt="" class="w-100 offer-image"> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- fearuted -->
+{{ partial "featuredProducts.html" . }}
+<!-- end -->
+
+<!-- add banner -->
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2018/10/17/08/52/black-3753444_960_720.jpg" alt=""
+                         class="w-100 ad-banner">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/03/12/43/percent-1176978_960_720.jpg" alt=""
+                         class="w-100 ad-banner">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- electronics -->
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+        <h2 class="text-center mb-5 block-heading">Electronic Devices</h2>
+        <div class="row">
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/18/39/smartphone-153650_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2012/04/13/15/03/monitor-32743_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/12/17/headphone-159569_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/15/02/24/computer-1330162_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/15/23/laser-printer-149815_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/13/58/ipad-147691_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/12/18/headset-145520_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/31/18/50/washing-machine-1786385_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/22/20/02/sony-slt-a58-2529795_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2019/03/23/19/57/smartphone-4076145_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/13/11/41/camera-158471_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/10/11/42/quadrocopter-1658967_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- Jewelry -->
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+        <h2 class="text-center mb-5 block-heading">Jewelry & Watches</h2>
+        <div class="row">
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2019/11/24/14/11/diamond-4649489_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/26/18/20/jade-2176151_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2018/12/04/10/04/gold-3855241_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/23/06/47/watch-1852089_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/23/14/01/pocket-watch-2531472_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/12/10/02/pearl-1818538_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2018/12/04/08/55/diamond-3855116_960_720.png" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2019/10/07/08/35/fashion-4532113_960_720.jpg" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/09/13/53/gemstone-665696_960_720.jpg" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2019/10/07/08/35/fashion-4532112_960_720.jpg" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2019/10/07/08/38/fashion-4532126_960_720.jpg" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/13/11/39/wrist-watch-2745278_960_720.png" alt=""
+                         class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+</section>
+<!-- end -->
+
+<!-- sports -->
+<section class="product-wrapper py-4">
+    <div class="container">
+
+        <h2 class="text-center mb-5 block-heading"> Sports & Outdoor  </h2>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/12/24/18/29/wear-3037444_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Shoes</h3>
+                            <strong>Rs 800</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal">
+                                    <i class="fas fa-cart-plus"></i> ADD TO CART
+                                </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899728_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Jacket</h3>
+                            <strong>Rs 500</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/09/13/22/31/baby-shoes-2747304_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Shoes</h3>
+                            <strong>Rs 5000</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2013/07/12/18/58/backpack-154121_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Bag</h3>
+                            <strong>Rs 500</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/09/08/07/59/bag-2728000_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Bag</h3>
+                            <strong>Rs 3500</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2012/04/13/17/16/knife-32934_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Portable Knife</h3>
+                            <strong>Rs 3500</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2012/04/12/12/54/pic-29913_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Stick</h3>
+                            <strong>Rs 400</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                <a href="detail.html" class="text-inherit">
+                    <div class="card rounded-0">
+                        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2013/07/13/11/32/pants-158358_960_720.png" alt="">
+                        <div class="card-body px-2">
+                            <h3 class="product-title text-truncate">Trouser</h3>
+                            <strong>Rs 3500</strong>
+                            <div class="mt-3">
+                                <a class="btn btn-sm btn-cart"cdata-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus"></i> ADD TO CART </a>
+                                <a href="" class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+    </div>
+</section>
+<!-- end -->
+
+<!-- beauty -->
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+
+        <h2 class="text-center mb-5 block-heading"> Health & Beauty  </h2>
+
+        <div class="row">
+            <div class="col-md-5 col-lg-6">
+                <img src="https://cdn.pixabay.com/photo/2020/04/02/05/19/beauty-4993472_960_720.jpg" alt="" class="w-100 ad-banner ad-banner-lg">
+            </div>
+            <div class="col-md-7 col-lg-6">
+                <div class="row">
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2017/07/08/18/13/nail-polish-2485198_960_720.png" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2016/01/13/10/46/lipstick-1137538_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2017/07/21/09/28/bottles-2525184_960_720.png" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2014/05/21/18/01/beauty-350074_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2013/03/01/18/39/airstyler-87881_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2015/05/05/16/59/cosmetics-754044_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2019/10/11/12/19/hair-care-4541744_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 image-block">
+                        <a href="detail.html">
+                            <img src="https://cdn.pixabay.com/photo/2017/01/16/14/17/make-up-1984115_960_720.jpg" alt="" class="w-100 product-image">
+                            <small class="d-block my-2 font-weight-bold">Rs 2500</small>
+                            <div class="hvr-icons">
+                                <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                                <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                                <a href=""><i class="far fa-heart m-2"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+    </div>
+</section>
+<!-- end -->
+
+<!-- women's fashion -->
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+
+        <h2 class="text-center mb-5 block-heading"> Women's Fashion </h2>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/16/20/00/concept-2410226_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/06/00/12/model-926528_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/25/09/20/kollam-sarees-821086_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/25/09/19/kollam-sarees-821085_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/11/22/28/sandal-669372_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/04/13/15/15/high-heels-1327020_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/08/10/20/14/purse-883112_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/08/10/20/17/handbag-883122_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/15/40/gown-150290_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/03/17/34/jeans-1234687_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/19/06/35/dress-up-1838144_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/10/02/05/36/mannequins-968122_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+    </div>
+</section>
+<!-- end -->
+
+<!-- add banner -->
+<section class="py-4">
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2020/04/25/09/10/cosmetics-5090010_960_720.jpg" alt="" class="w-100 ad-banner">
+    </div>
+</section>
+<!-- end -->
+
+<!-- men's fashion -->
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+
+        <h2 class="text-center mb-5 block-heading"> Men's Fashion </h2>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2018/10/10/14/23/pants-3737400_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/29/15/45/woman-2799489_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2020/07/15/18/32/sneakers-5408674_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/09/20/24/jump-933102_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2020/03/06/14/36/jeans-4907233_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/09/11/23/17/baby-shoes-2740809_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/18/21/37/man-2865618_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/30/11/58/sexy-3049894_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/19/18/44/t-shirt-2420558_960_720.png" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/06/16/21/56/belt-139757_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 border image-block">
+                <a href="detail.html">
+                    <img src="https://cdn.pixabay.com/photo/2013/09/01/17/54/sunglasses-178153_960_720.jpg" alt="" class="w-100 product-image product-image-lg">
+                    <p class="mb-0 text-dark text-truncate">Product Title</p>
+                    <strong class="d-block mb-2">Rs 2500</strong>
+                    <div class="hvr-icons">
+                        <a href="detail.html"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="my-3 text-right">
+            <a href="list.html" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+
+    </div>
+</section>
+<!-- end -->
+
+<section class="py-5 text-center">
+    <div class="container">
+        <button class="btn btn-lg btn-secondary rounded-0">Laod More</button>
+    </div>
+</section>
+
+
+
+
+<!--Add To Cart Modal -->
+<div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title">My Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th class="text-right">Action</th>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">
+                            <img src="https://cdn.pixabay.com/photo/2017/12/24/18/29/wear-3037444_960_720.png" alt="" width="100px">
+                        </td>
+                        <td class="align-middle">Shoes</td>
+                        <td class="align-middle">
+                            <!-- <input type="number" value="1" min="1"> -->
+                            <div class="input-group qty-btn">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-left-minus btn border bg-light btn-number"  data-type="minus" data-field="">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                    </span>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                                <span class="input-group-btn">
+                      <button type="button" class="quantity-right-plus btn border bg-light btn-number" data-type="plus" data-field="">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </span>
+                            </div>
+                        </td>
+                        <td class="align-middle">Rs 800</td>
+                        <td class="align-middle text-right text-danger"><i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right">Shipping</td>
+                        <td class="text-right">0.00</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4" class="text-right">Total</th>
+                        <th class="text-right">Rs 800</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-secondary text-white" data-dismiss="modal">Close</a>
+                <a type="button" class="btn btn-primary" href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+{{ end }}

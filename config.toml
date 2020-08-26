@@ -1,0 +1,33 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+
+[taxonomies]
+category = "categories"
+subcategory = "subcategories"
+
+#Navbar Menus
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "Orders History"
+    url = "/history/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 4
+
+[params]
+    companyLogo = "https://cdn.pixabay.com/photo/2013/07/12/14/53/shopping-cart-148959_960_720.png"
+    sliderTitle = "First Slide"
+    sliderImage = "https://cdn.pixabay.com/photo/2017/08/06/22/52/blouse-2597205_960_720.jpg"

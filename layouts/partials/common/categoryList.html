@@ -1,0 +1,23 @@
+{{range $catname, $taxonomy := .Site.Taxonomies.categories}} {{ $cnt := .Count }}
+<ul class="list-unstyled category-list">
+    <li class="dropdown dropright">
+        <a class="dropdown-toggle dropdown-item text-truncate" href="#" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="true">
+            {{$catname}} <i class="fas fa-angle-right arrow-right"></i>
+        </a>
+        <ul class="dropdown-menu">
+            {{ range .Pages }}
+            {{ if .Params.subcategories }}
+            {{ range .Params.subcategories }}
+            <li class="dropdown-item text-truncate"><a href="#">{{ . }}</a></li>
+            {{ end }}
+            {{ else }}
+            <li class="dropdown-item text-truncate"><a href="#">No sub-category found</a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+
+    </li>
+</ul>
+{{ end }}
+

@@ -1,0 +1,86 @@
+{{ define "main" }}
+<body>
+
+<section class="py-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ .Params.image }}" alt="" class="w-100">
+            </div>
+            <div class="col-md-8 pl-md-5">
+                <h1>{{ .Title }}</h1>
+<!--                <div>-->
+<!--                    <strong>Brand</strong> : Technos-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <strong>Screen Size</strong> : 15"-->
+<!--                </div>-->
+                <div>
+                    <strong>Category</strong> :
+                    {{ range .Params.categories }}
+                    {{ . }}
+                    {{ end }}
+                </div>
+<!--                <div>-->
+<!--                    <strong>Availability</strong> : Available-->
+<!--                </div>-->
+                <hr>
+                <div class="d-flex">
+                    <h2 class="font-weight-bold primary-text-color"> <small>Rs</small> {{ .Params.price }}</h2>
+                    <div class="d-inline-block ml-4">
+                        <div class="input-group qty-btn">
+                <span class="input-group-btn">
+                  <button type="button" class="quantity-left-minus btn border bg-light btn-number"  data-type="minus" data-field="">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </span>
+                            <input type="text" id="quantity" name="quantity" class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                            <span class="input-group-btn">
+                  <button type="button" class="quantity-right-plus btn border bg-light btn-number" data-type="plus" data-field="">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-cart-lg btn-cart"><i class="fas fa-cart-plus"></i> ADD TO CART </button>
+                    <a class="float-right fav-icon"><i class="far fa-heart"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="product-tab" data-toggle="tab" href="#product"
+                       role="tab" aria-controls="product" aria-selected="true">Product Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification"
+                       role="tab" aria-controls="specification" aria-selected="false">Specification</a>
+                </li>
+            </ul>
+            <div class="tab-content py-5">
+                <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">
+                    {{ range .Params.details }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+
+                <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                    {{ range .Params.specification }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</body>
+{{ end }}

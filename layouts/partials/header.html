@@ -1,0 +1,95 @@
+<header>
+    <!-- top header -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4 col-md-3">
+                    <a class="navbar-brand" href="{{ $.Site.BaseURL }}">
+                        <img src="{{ $.Site.Params.companyLogo }}" alt=""
+                             class="logo" width="160px">
+                    </a>
+                </div>
+
+                <div class="col-2 col-md-6 my-auto">
+                    <div class="d-md-none text-center search-icon-toggle">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search-bar">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn border dropdown-toggle rounded-0 text-muted" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">All Category <i
+                                        class="fas fa-arrow-down ml-1 text-muted"></i></button>
+                                <div class="dropdown-menu border-0 rounded-0">
+                                    {{ partial "common/categoryList.html" . }}
+                                </div>
+                            </div>
+                            <input type="text" class="form-control text-center" aria-label="Search text input"
+                                   placeholder="Search Product">
+                            <!-- <i class="fas fa-search search-icon text-muted"></i> -->
+                            <div class="input-group-append">
+                                <button class="btn btn-primary rounded-0" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-danger rounded-0 ml-3 d-md-none" type="button">
+                                    <span class="close-icon"><i class="fas fa-times text-white"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 text-right my-auto"><i class="fas fa-phone-volume mr-1 phone-icon"></i> 9845215214</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom header -->
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+                        aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav navbar-main mr-auto">
+                        <li class="nav-item dropdown" style="width: 255px;">
+                            <a class="nav-link dropdown-toggle px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                <strong><i class="fas fa-bars mx-2"></i> All Categories</strong>
+                            </a>
+                            <div class="dropdown-menu border-0 rounded-0">
+                                {{ partial "common/categoryList.html" . }}
+                            </div>
+                        </li>
+
+                        {{ range site.Menus.main }}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+
+                    </ul>
+                </div>
+                <div class="pr-3 user-menu">
+                    <div class="dropdown d-inline-block">
+                        <a class="dropdown-toggle" type="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user text-white"></i>
+                        </a>
+                        <div class="dropdown-menu border-0 rounded-0" aria-labelledby="user">
+                            <a class="dropdown-item" href="#">Login</a>
+                        </div>
+                    </div>
+                    <a href="order.html">
+                        <i class="fas fa-cart-plus ml-3 text-white position-relative"></i>
+                        <span class="badge badge-primary badge-pill cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+</header>
