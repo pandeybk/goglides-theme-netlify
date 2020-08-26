@@ -1,8 +1,11 @@
 ---
 title: "Necklace"
 image: "https://cdn.pixabay.com/photo/2017/10/29/13/17/jacket-2899728_960_720.png"
-categories: ["Womens", "Jewellery"]
-subcategories: ["Accessories"]
+categories: 
+    - Womens
+    - Jewellery
+subcategories: 
+    - Accessories
 price: "900"
 details:
     - Brand- Dell
