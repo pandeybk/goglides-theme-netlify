@@ -10,35 +10,36 @@
                              class="logo" width="160px">
                     </a>
                 </div>
+                {{ partial "common/search.html" . }}
 
-                <div class="col-2 col-md-6 my-auto">
-                    <div class="d-md-none text-center search-icon-toggle">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="search-bar">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <button class="btn border dropdown-toggle rounded-0 text-muted" type="button" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">All Category <i
-                                        class="fas fa-arrow-down ml-1 text-muted"></i></button>
-                                <div class="dropdown-menu border-0 rounded-0">
-                                    {{ partial "common/categoryList.html" . }}
-                                </div>
-                            </div>
-                            <input type="text" class="form-control text-center" aria-label="Search text input"
-                                   placeholder="Search Product">
-                            <!-- <i class="fas fa-search search-icon text-muted"></i> -->
-                            <div class="input-group-append">
-                                <button class="btn btn-primary rounded-0" type="button">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                                <button class="btn btn-danger rounded-0 ml-3 d-md-none" type="button">
-                                    <span class="close-icon"><i class="fas fa-times text-white"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-2 col-md-6 my-auto">-->
+<!--                    <div class="d-md-none text-center search-icon-toggle">-->
+<!--                        <i class="fas fa-search"></i>-->
+<!--                    </div>-->
+<!--                    <div class="search-bar">-->
+<!--                        <div class="input-group">-->
+<!--                            <div class="input-group-prepend">-->
+<!--                                <button class="btn border dropdown-toggle rounded-0 text-muted" type="button" data-toggle="dropdown"-->
+<!--                                        aria-haspopup="true" aria-expanded="false">All Category <i-->
+<!--                                        class="fas fa-arrow-down ml-1 text-muted"></i></button>-->
+<!--                                <div class="dropdown-menu border-0 rounded-0">-->
+<!--                                    {{ partial "common/categoryList.html" . }}-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <input type="text" class="form-control text-center" aria-label="Search text input"-->
+<!--                                   placeholder="Search Product">-->
+<!--                            &lt;!&ndash; <i class="fas fa-search search-icon text-muted"></i> &ndash;&gt;-->
+<!--                            <div class="input-group-append">-->
+<!--                                <button class="btn btn-primary rounded-0" type="button">-->
+<!--                                    <i class="fas fa-search"></i>-->
+<!--                                </button>-->
+<!--                                <button class="btn btn-danger rounded-0 ml-3 d-md-none" type="button">-->
+<!--                                    <span class="close-icon"><i class="fas fa-times text-white"></i></span>-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="col-6 col-md-3 text-right my-auto"><i class="fas fa-phone-volume mr-1 phone-icon"></i> 9845215214</div>
             </div>
