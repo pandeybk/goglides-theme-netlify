@@ -1,6 +1,7 @@
 baseURL = "https://goglides-theme.netlify.app/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+paginate = 1
 
 [taxonomies]
 category = "categories"

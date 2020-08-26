@@ -1,0 +1,25 @@
+{{ $taggedContent := .Site.Taxonomies.categories.electronics.Pages }}
+<section class="product-wrapper py-4 text-center">
+    <div class="container">
+        <h2 class="text-center mb-5 block-heading">Electronic Devices</h2>
+        <div class="row">
+            {{ range $taggedContent }}
+            <div class="col-6 col-md-3 col-lg-2 border image-block">
+                <a href="{{ .Permalink }}">
+                    <img src="{{ .Params.image }}" alt="" class="w-100 product-image">
+                    <p class="mb-0 text-dark text-truncate">{{ .Title }}</p>
+                    <strong class="d-block mb-2">Rs {{ .Params.price }}</strong>
+                    <div class="hvr-icons">
+                        <a href="{{ .Permalink }}"><i class="fas fa-eye m-2"></i></a>
+                        <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
+                        <a href=""><i class="far fa-heart m-2"></i></a>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        <div class="my-3 text-right">
+            <a href="{{ $.Site.BaseURL }}categories/electronics" class="btn btn-view-more">View More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+</section>

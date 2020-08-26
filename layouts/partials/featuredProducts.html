@@ -1,9 +1,9 @@
-{{ $randomPosts := shuffle (where .Site.Pages "Type" "product")}}
+{{ with .Site.GetPage "product" }}
 <section class="py-5 product-wrapper bg-light text-center">
     <div class="container">
         <h2 class="text-center mb-5 block-heading">Featured</h2>
         <div class="row">
-            {{ range $randomPosts | first 2 }}
+            {{ range shuffle .Pages | first 4}}
             <div class="col-6 col-md-3 col-lg-2 border image-block">
                 <a href="{{ .Permalink }}">
                     <img src="{{ .Params.image }}" alt=""
@@ -23,3 +23,4 @@
         </div>
     </div>
 </section>
+{{ end }}
