@@ -28,7 +28,7 @@ subcategory = "subcategories"
 
 [[menu.main]]
     name = "Orders History"
-    url = "/history/"
+    url = "/order/"
     weight = 3
 
 [[menu.main]]

@@ -1,0 +1,125 @@
+{{ define "main" }}
+<body>
+
+<section class="py-5">
+    <div class="container">
+
+        <h1 class="text-center mb-5 block-heading">{{ .Title }}</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="border-top-0">Image</th>
+                            <th scope="col" class="border-top-0">Product</th>
+                            <th scope="col" class="border-top-0">Price</th>
+                            <th scope="col" class="border-top-0 text-right">Qty</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"> <img src="https://cdn.pixabay.com/photo/2015/08/10/20/17/handbag-883122_960_720.jpg" alt="" width="50px"> </th>
+                            <td>Bag</td>
+                            <td>Rs 200</td>
+                            <td class="text-right">
+                                <div class="input-group qty-btn ml-auto">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn border bg-light btn-number"  data-type="minus" data-field="">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                                    <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn border bg-light btn-number" data-type="plus" data-field="">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="https://cdn.pixabay.com/photo/2018/10/28/13/32/mac-3778794_960_720.png" alt="" width="50px"></th>
+                            <td>iMac</td>
+                            <td>Rs 1000</td>
+                            <td class="text-right">
+                                <div class="input-group qty-btn ml-auto">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn border bg-light btn-number"  data-type="minus" data-field="">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                                    <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn border bg-light btn-number" data-type="plus" data-field="">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><img src="https://cdn.pixabay.com/photo/2017/07/03/19/26/iphone-2468714_960_720.png" alt="" width="50px"></th>
+                            <td>iphone</td>
+                            <td>Rs 1200</td>
+                            <td class="text-right">
+                                <div class="input-group qty-btn ml-auto">
+                      <span class="input-group-btn">
+                        <button type="button" class="quantity-left-minus btn border bg-light btn-number"  data-type="minus" data-field="">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                                    <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn border bg-light btn-number" data-type="plus" data-field="">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </span>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4 pl-md-3 pl-xl-5">
+                <strong class="d-block mb-3">Order Summary</strong>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Bag</td>
+                        <td>1</td>
+                        <td class="text-right">Rs 200</td>
+                    </tr>
+                    <tr>
+                        <td>iMac</td>
+                        <td>1</td>
+                        <td class="text-right">Rs 1000</td>
+                    </tr>
+                    <tr>
+                        <td>iphone</td>
+                        <td>1</td>
+                        <td class="text-right">Rs 1200</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-light">Shipping</td>
+                        <td colspan="2" class="text-right bg-light">Rs 0.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total</th>
+                        <td colspan="2" class="text-right">Rs 2400.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="my-4">
+                    <a href="checkout.html" class="btn btn-primary rounded-0 w-100">Checkout</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+{{ end }}

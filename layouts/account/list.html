@@ -1,0 +1,63 @@
+{{ define "main" }}
+<body>
+
+<section class="py-5">
+    <div class="container">
+
+        <h1 class="text-center mb-5 block-heading">{{ .Title }}</h1>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col" class="border-top-0">Image</th>
+                            <th scope="col" class="border-top-0">Product</th>
+                            <th scope="col" class="border-top-0">Price</th>
+                            <th scope="col" class="border-top-0 text-right">Qty</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {{ range .Site.Data.orders }}
+
+                        <tr>
+                            <th scope="row"><img src="{{ .image }}"
+                                    alt="" width="50px"></th>
+                            <td>{{ .title }}</td>
+                            <td>Rs {{ .price }}</td>
+                            <td class="text-right">
+                                <div class="input-group qty-btn ml-auto">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn border bg-light btn-number"
+                                            data-type="minus" data-field="">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity"
+                                           class="form-control input-number text-center border-0" value="{{ .quantity }}" min="1"
+                                           max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn border bg-light btn-number"
+                                             data-type="plus" data-field="">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        {{ end }}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+{{ end }}

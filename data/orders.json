@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Bag",
+    "image": "https://cdn.pixabay.com/photo/2015/08/10/20/17/handbag-883122_960_720.jpg",
+    "price": "200",
+    "quantity": "1"
+  },
+  {
+    "title": "iMac",
+    "image": "https://cdn.pixabay.com/photo/2018/10/28/13/32/mac-3778794_960_720.png",
+    "price": "1000",
+    "quantity": "1"
+  },
+  {
+    "title": "iphone",
+    "image": "https://cdn.pixabay.com/photo/2017/07/03/19/26/iphone-2468714_960_720.png",
+    "price": "1200",
+    "quantity": "1"
+  }
+]
