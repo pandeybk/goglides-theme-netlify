@@ -1,7 +1,7 @@
 ---
 title: Foundation
 image: /img/beauty.jpg
-price: "1600"
+price: "10"
 categories:
   - Beauty
 subcategories:
