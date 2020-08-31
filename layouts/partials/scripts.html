@@ -38,8 +38,24 @@ var checkout = new KhaltiCheckout(config);
 var btn = document.getElementById("payment-button");
 btn.onclick = function () {
     // minimum transaction amount must be 10, i.e 1000 in paisa.
-    checkout.show({amount: {{mul (int .Params.price) 100 }}});
+    checkout.show({amount: totalAmount*100});
 }
+
+    document.getElementById("priceDisplay").textContent = {{ .Params.price }};
+    var totalAmount = parseInt(document.getElementById("priceDisplay").textContent)
+    var totalPrice = {{int .Params.price }};
+    document.getElementById("minusButton").disabled = true;
+    function changePrice(n) {
+        var count = document.getElementById("quantity").value;
+        if((parseInt(count)+n) == 1){
+            document.getElementById("minusButton").disabled = true;
+        }else {
+            document.getElementById("minusButton").disabled = false;
+        }
+        var total = (parseInt(count)+n) * totalPrice;
+        document.getElementById("priceDisplay").textContent = total.toString();
+        totalAmount = total
+    }
 </script>
 
 
