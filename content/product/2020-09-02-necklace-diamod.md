@@ -1,15 +1,15 @@
 ---
-title: Gold Earring
-image: /img/gold-3855241_960_720.png
+title: Men's Watches
+image: /img/watch-1852089_960_720.png
 price: "5000"
 categories:
   - Jewelry & Watches
 subcategories:
-  - Gold
-  - Earring
-brand: Gold Earring
+  - Men's Watches
+  - Watches
+brand: Radio
 details:
-  - Gold Earring
+  - Men's Watches
 specification:
-  - Gold Earring
+  - Men's Watches
 ---
