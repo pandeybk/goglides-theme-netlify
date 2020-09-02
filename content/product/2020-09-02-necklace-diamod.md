@@ -1,11 +1,11 @@
 ---
-title: Necklace Diamod
-image: /img/diamond-3855116_960_720.png
-price: "9000"
+title: Ring Diamod
+image: /img/diamond-4649489_960_720.png
+price: "10000"
 categories:
   - Jewelry & Watches
 subcategories:
-  - Jewelry
+  - Ring
 brand: Diamond
 details:
   - Jewelry & Watches
