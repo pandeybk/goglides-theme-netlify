@@ -3,7 +3,8 @@ title: Gemstone Necklace
 image: /img/gemstone-665696_960_720.jpg
 price: "10000"
 categories:
-  - Jewelry & Watches
+  - Womens
+  - Jewellery
 subcategories:
   - Gemstone
   - Necklace
