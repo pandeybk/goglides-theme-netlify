@@ -1,12 +1,13 @@
 ---
-title: Ring Diamod
-image: /img/diamond-4649489_960_720.png
-price: "10000"
+title: Gemstone Necklace
+image: /img/gemstone-665696_960_720.jpg
+price: "11000"
 categories:
   - Jewelry & Watches
 subcategories:
-  - Ring
-brand: Diamond
+  - Necklace
+  - Gemstone
+brand: Gemstone
 details:
   - Jewelry & Watches
 specification:
