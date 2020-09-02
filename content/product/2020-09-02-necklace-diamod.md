@@ -1,15 +1,15 @@
 ---
-title: Gemstone Necklace
-image: /img/gemstone-665696_960_720.jpg
-price: "11000"
+title: Gold Earring
+image: /img/gold-3855241_960_720.png
+price: "5000"
 categories:
   - Jewelry & Watches
 subcategories:
-  - Necklace
-  - Gemstone
-brand: Gemstone
+  - Gold
+  - Earring
+brand: Gold Earring
 details:
-  - Jewelry & Watches
+  - Gold Earring
 specification:
-  - Jewelry & Watches
+  - Gold Earring
 ---
