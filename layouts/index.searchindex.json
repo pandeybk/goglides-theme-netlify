@@ -1,8 +1,7 @@
-[
-  {{- range $index, $page := .Site.RegularPages -}}
-  {{- if gt $index 0 -}} , {{- end -}}
-  {{- $entry := dict "uri" $page.RelPermalink "title" $page.Title -}}
-  {{- $entry = merge $entry (dict "categories" $page.Params.categories) -}}
-  {{- $entry | jsonify -}}
-  {{- end -}}
-]
+
+{{- $.Scratch.Add "searchindex" slice -}}
+{{- range $index, $element := .Site.RegularPages -}}
+{{- $.Scratch.Add "searchindex" (dict "id" $index "title" $element.Title "uri" $element.Permalink "categories" $element.Params.categories) -}}
+{{- end -}}
+{{- $.Scratch.Get "searchindex" | jsonify -}}
+
