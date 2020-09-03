@@ -10,21 +10,12 @@
             </div>
             <div class="col-md-8 pl-md-5">
                 <h1>{{ .Title }}</h1>
-                <!--                <div>-->
-                <!--                    <strong>Brand</strong> : Technos-->
-                <!--                </div>-->
-                <!--                <div>-->
-                <!--                    <strong>Screen Size</strong> : 15"-->
-                <!--                </div>-->
                 <div>
                     <strong>Category</strong> :
                     {{ range .Params.categories }}
                     {{ . }}
                     {{ end }}
                 </div>
-                <!--                <div>-->
-                <!--                    <strong>Availability</strong> : Available-->
-                <!--                </div>-->
                 <hr>
                 <div class="d-flex">
                     <h2 class="font-weight-bold primary-text-color"> <span id="priceDisplay"></span> </h2>
