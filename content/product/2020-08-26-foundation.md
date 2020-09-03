@@ -4,6 +4,7 @@ image: /img/beauty.jpg
 price: "10"
 categories:
   - Beauty
+  - Featured
 subcategories:
   - Face
 brand: Loreal

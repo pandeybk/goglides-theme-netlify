@@ -5,7 +5,7 @@
         <h2 class="text-center mb-5 block-heading"> Health & Beauty  </h2>
 
         <div class="row">
-            {{ range $taggedContent }}
+            {{ range $taggedContent | first 6 }}
             <div class="col-6 col-md-3 col-lg-2 border image-block">
                 <a href="{{ .Permalink }}">
                     <img src="{{ .Params.image }}" alt="" class="w-100 product-image">

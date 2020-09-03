@@ -12,14 +12,18 @@
         {{ range $pag.Pages }}
         <div class="col-6 col-md-3 col-lg-2 border image-block">
           <a href="{{ .Permalink }}">
+            {{ if .Params.image }}
             <img src="{{ .Params.image }}" alt="" class="w-100 product-image">
+            {{ end }}
             <p class="mb-0 text-dark text-truncate">{{ .Title }}</p>
+            {{ if .Params.price }}
             <strong class="d-block mb-2">Rs {{ .Params.price }}</strong>
             <div class="hvr-icons">
               <a href="{{ .Permalink }}"><i class="fas fa-eye m-2"></i></a>
               <a href="" data-toggle="modal" data-target="#addToCartModal"><i class="fas fa-cart-plus m-2"></i></a>
               <a href=""><i class="far fa-heart m-2"></i></a>
             </div>
+            {{ end }}
           </a>
         </div>
         {{ end }}

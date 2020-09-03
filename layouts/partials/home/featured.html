@@ -1,7 +1,7 @@
-{{ $taggedContent := .Site.Taxonomies.categories.electronics.Pages }}
+{{ $taggedContent := .Site.Taxonomies.categories.featured.Pages }}
 <section class="product-wrapper py-4 text-center">
     <div class="container">
-        <h2 class="text-center mb-5 block-heading">Electronic Devices</h2>
+        <h2 class="text-center mb-5 block-heading">Featured Products</h2>
         <div class="row">
             {{ range $taggedContent | first 6 }}
             <div class="col-6 col-md-3 col-lg-2 border image-block">
