@@ -203,6 +203,7 @@
                 // Fill out search result template, adjust as needed.
                 var element = template.content.cloneNode(true);
                 element.querySelector(".product-image").src = doc.image;
+                element.querySelector(".thumbnail").href = doc.uri;
                 element.querySelector(".summary-title-link").href = doc.uri;
                 element.querySelector(".summary-title-link").textContent = doc.title;
                 target.appendChild(element);
@@ -248,7 +249,7 @@
     <article class="content post">
         <div>
             <div class="col-xs-5 col-sm-5 col-md-3">
-                <a href="#" title="Lorem ipsum" class="thumbnail"><img class="product-image" alt="Lorem ipsum"/></a>
+                <a title="Lorem ipsum" class="thumbnail"><img class="product-image" alt="Lorem ipsum"/></a>
             </div>
             <div class="col-xs-5 col-sm-5 col-md-3">
                 <h2 class="post-title"><a class="summary-title-link"></a></h2>
