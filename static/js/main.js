@@ -23,32 +23,31 @@ $(document).ready(function(){
   var quantitiy=0;
     $('.quantity-right-plus').click(function(e){
         
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#quantity').val());
-        
-        // If is not undefined
-            
-            $('#quantity').val(quantity + 1);
-
-          
-            // Increment
-        
+      e.preventDefault();
+      var quantity = parseInt($('#quantity').val());
+      
+      $('#quantity').val(quantity + 1);        
     });
 
-      $('.quantity-left-minus').click(function(e){
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        var quantity = parseInt($('#quantity').val());
-        
-        // If is not undefined
+    $('.quantity-left-minus').click(function(e){
+      e.preventDefault();
+      var quantity = parseInt($('#quantity').val());
       
-            // Increment
-            if(quantity>0){
-            $('#quantity').val(quantity - 1);
-            }
+        if(quantity>0){
+        $('#quantity').val(quantity - 1);
+        }
     });
     
+});
+
+
+// dropdown parent link click
+jQuery(function($) {
+  if ($(window).width() > 769) {
+
+    $('.category-list .dropdown > a').click(function() {
+      location.href = this.href;
+    });
+
+  }
 });

@@ -21,22 +21,22 @@
                     <h2 class="font-weight-bold primary-text-color"> <span id="priceDisplay"></span> </h2>
                     <div class="d-inline-block ml-4">
                         <div class="input-group qty-btn">
-                <span class="input-group-btn">
-                  <button onclick="changePrice(-1)" id="minusButton" type="button"
-                          class="quantity-left-minus btn border bg-light btn-number" data-type="minus"
-                          data-field="">
-                    <i class="fas fa-minus"></i>
-                  </button>
-                </span>
-                            <input id="quantity" type="text" id="quantity" name="quantity"
-                                   class="form-control input-number text-center border-0" value="1" min="1" max="100">
                             <span class="input-group-btn">
-                  <button onclick="changePrice(1)" type="button" type="button"
-                          class="quantity-right-plus btn border bg-light btn-number" data-type="plus"
-                          data-field="">
-                    <i class="fas fa-plus"></i>
-                  </button>
-                </span>
+                            <button onclick="changePrice(-1)" id="minusButton" type="button"
+                                class="quantity-left-minus btn border bg-light btn-number" data-type="minus"
+                                data-field="">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            </span>
+                            <input id="quantity" type="text" id="quantity" name="quantity"
+                                class="form-control input-number text-center border-0" value="1" min="1" max="100">
+                            <span class="input-group-btn">
+                            <button onclick="changePrice(1)" type="button" type="button"
+                                class="quantity-right-plus btn border bg-light btn-number" data-type="plus"
+                                data-field="">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,9 @@
                 <div>
 
                     <!-- Place this where you need payment button -->
-                    <button id="payment-button">Pay with Khalti</button>
+                    <button id="payment-button" class="btn border">
+                       <img src="/img/khalti-logo.svg" alt="" class="w-25"> Pay with Khalti
+                    </button>
                     <!-- Place this where you need payment button -->
 
                     <a class="float-right fav-icon"><i class="far fa-heart"></i></a>
