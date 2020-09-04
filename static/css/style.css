@@ -467,3 +467,11 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+#search-results{
+  margin: 30px 0;
+}
+
+.post-title{
+  font-size: 1.6rem;
+}

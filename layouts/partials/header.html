@@ -24,6 +24,9 @@
                         </form>
 
                     </div>
+                    <!-- <div class="search-display overlay">
+
+                    </div> -->
                 </div>
 
                 <div class="col-6 col-md-3 text-right my-auto"><i class="fas fa-phone-volume mr-1 phone-icon"></i> 9845215214</div>
@@ -76,10 +79,28 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </div> 
 
 </header>
 
+<!-- search content -->
+<div class="search-display overlay container"></div>
+
+<template id="search-result" hidden>
+    <article class="content post border mb-2">
+        <div class="row">
+            <div class="col-md-3 col-xl-2">
+                <a title="Lorem ipsum" class="thumbnail">
+                    <img class="product-image w-100" alt="Lorem ipsum"/>
+                </a>
+            </div>
+            <div class="col-md-9 col-xl-10 py-3 my-auto">
+                <h2 class="post-title"><a class="summary-title-link"></a></h2>
+            </div>
+        </div>
+    </article>
+</template>
+<!-- end -->
 
 <script>
 
@@ -175,19 +196,18 @@
             console.log(results)
 
             // The element where search results should be displayed, adjust as needed.
-            var target = document.querySelector(".search-bar");
+            var target = document.querySelector(".search-display");
 
             while (target.firstChild)
                 target.removeChild(target.firstChild);
 
-            var title = document.createElement("h1");
+            var title = document.createElement("h2");
             title.id = "search-results";
+            title.className = "text-danger"
             title.className = "list-title";
 
             if (results.length == 0)
                 title.textContent = `No results found for “${term}”`;
-            else if (results.length == 1)
-                title.textContent = `Found one result for “${term}”`;
             else
                 title.textContent = `Found ${results.length} results for “${term}”`;
             target.appendChild(title);
@@ -200,6 +220,8 @@
 
                 // Fill out search result template, adjust as needed.
                 var element = template.content.cloneNode(true);
+                element.querySelector(".product-image").src = doc.image;
+                element.querySelector(".thumbnail").href = doc.uri;
                 element.querySelector(".summary-title-link").href = doc.uri;
                 element.querySelector(".summary-title-link").textContent = doc.title;
                 target.appendChild(element);
@@ -240,15 +262,3 @@
     }, false);
 
 </script>
-
-<template id="search-result" hidden>
-    <article class="content post">
-        <h2 class="post-title"><a class="summary-title-link"></a></h2>
-        <summary class="summary"></summary>
-        <div class="read-more-container">
-            <a class="read-more-link"></a>
-        </div>
-    </article>
-</template>
-
-

@@ -1,7 +1,7 @@
 
 {{- $.Scratch.Add "searchindex" slice -}}
 {{- range $index, $element := .Site.RegularPages -}}
-{{- $.Scratch.Add "searchindex" (dict "id" $index "title" $element.Title "uri" $element.Permalink "categories" $element.Params.categories) -}}
+{{- $.Scratch.Add "searchindex" (dict "id" $index "title" $element.Title "image" $element.Params.image "uri" $element.Permalink "categories" $element.Params.categories) -}}
 {{- end -}}
 {{- $.Scratch.Get "searchindex" | jsonify -}}
 
