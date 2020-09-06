@@ -32,12 +32,20 @@
                 $.ajax({
                     type: 'post',
                     cache: false,
-                    url: 'https://api-stage.goglides.com/v1/validateKhalti',
+                    // url: 'https://api-stage.goglides.com/v1/validateKhalti',
+                    url:'http://localhost:8082/v1/validateKhalti',
                     dataType: "json",
                     contentType: 'application/json',
                     data: JSON.stringify(sendInfo),
                     success: function(response) {
-                        console.log(response)
+                        document.getElementById('myModal').style.display="block"
+                        document.getElementById('messageKhalti').textContent = 'Your payment is successful'
+                        console.log('response', response)
+                    },
+                    error: function( response ){
+                        document.getElementById('myModal').style.display="block"
+                        document.getElementById('messageKhalti').textContent = 'Something went wrong. Please try again'
+                        console.log('response', response)
                     }
                 });
                 // hit merchant api for initiating verfication
