@@ -27,19 +27,21 @@
                 var sendInfo = {
                     token: payload.token,
                     amount: payload.amount,
+                    productAmount: (payload.amount/100)/{{ .Params.price }},
+                    productName: {{ .Title }}
                 }
                 console.log(sendInfo)
                 $.ajax({
                     type: 'post',
                     cache: false,
-                    // url: 'https://api-stage.goglides.com/v1/validateKhalti',
-                    url:'http://localhost:8082/v1/validateKhalti',
+                    url: 'https://api-stage.goglides.com/v1/validateKhalti',
+                    // url:'http://localhost:8082/v1/validateKhalti',
                     dataType: "json",
                     contentType: 'application/json',
                     data: JSON.stringify(sendInfo),
                     success: function(response) {
                         document.getElementById('myModal').style.display="block"
-                        document.getElementById('messageKhalti').textContent = 'Your payment is successful'
+                        document.getElementById('messageKhalti').textContent = 'Your payment is successful. Check your mail for confirmation.'
                         console.log('response', response)
                     },
                     error: function( response ){
@@ -62,6 +64,7 @@
 
 var checkout = new KhaltiCheckout(config);
 var btn = document.getElementById("payment-button");
+
 btn.onclick = function () {
     // minimum transaction amount must be 10, i.e 1000 in paisa.
     checkout.show({amount: totalAmount*100});
