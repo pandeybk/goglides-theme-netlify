@@ -9,6 +9,8 @@
 
 
 <script>
+    const spinner = document.getElementById("spinner");
+
     var config = {
         // replace the publicKey with yours
         "publicKey": "test_public_key_e281eac499354a42beb024eb3ce9112b",
@@ -24,34 +26,36 @@
         ],
         "eventHandler": {
             onSuccess (payload) {
+                spinner.removeAttribute("hidden");
                 var sendInfo = {
                     token: payload.token,
                     amount: payload.amount,
-                    productAmount: (payload.amount/100)/{{ .Params.price }},
+                    companyLogo: {{ .Site.Params.companyLogo }},
+                    quantity: (payload.amount/100)/{{ .Params.price }},
                     productName: {{ .Title }}
                 }
-                console.log(sendInfo)
                 $.ajax({
                     type: 'post',
                     cache: false,
-                    url: 'https://api-stage.goglides.com/v1/validateKhalti',
-                    // url:'http://localhost:8082/v1/validateKhalti',
+                    // url: 'https://api-stage.goglides.com/v1/validateKhalti',
+                    url:'http://127.0.0.1:8000/api/verify',
                     dataType: "json",
                     contentType: 'application/json',
                     data: JSON.stringify(sendInfo),
                     success: function(response) {
                         document.getElementById('myModal').style.display="block"
+                        spinner.setAttribute("hidden", "");
                         document.getElementById('messageKhalti').textContent = 'Your payment is successful. Check your mail for confirmation.'
                         console.log('response', response)
                     },
                     error: function( response ){
                         document.getElementById('myModal').style.display="block"
+                        spinner.setAttribute("hidden", "");
                         document.getElementById('messageKhalti').textContent = 'Something went wrong. Please try again'
                         console.log('response', response)
                     }
                 });
                 // hit merchant api for initiating verfication
-                console.log(payload);
             },
             onError (error) {
                 console.log(error);
