@@ -470,6 +470,7 @@ form.example::after {
 
 #search-results{
   margin: 30px 0;
+  text-align: center;
 }
 
 .post-title{
@@ -517,8 +518,8 @@ form.example::after {
 
 #spinner:not([hidden]) {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   right: 0;
   bottom: 0;
   display: flex;
