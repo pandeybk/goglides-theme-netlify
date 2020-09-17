@@ -38,7 +38,7 @@
     <div class="header-bottom">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light px-0">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
+                <button class="navbar-toggler px-0" type="button" data-toggle="collapse" data-target="#navbarMain"
                         aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -48,7 +48,10 @@
                         <li class="nav-item dropdown" style="width: 255px;">
                             <a class="nav-link dropdown-toggle px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                                aria-expanded="false">
-                                <strong><i class="fas fa-bars mx-2"></i> All Categories</strong>
+                                <strong>
+                                    <i class="fas fa-bars mx-2 d-none d-md-inline"></i> 
+                                    All Categories
+                                </strong>
                             </a>
                             <div class="dropdown-menu border-0 rounded-0">
                                 {{ partial "common/categoryList.html" . }}
@@ -88,7 +91,7 @@
 
 <template id="search-result" hidden>
     <div class="container">
-        <article class="content post border mb-2">
+        <article class="content post border mb-2 text-center text-md-left">
             <div class="row">
                 <div class="col-md-3 col-xl-2">
                     <a title="Lorem ipsum" class="thumbnail">
