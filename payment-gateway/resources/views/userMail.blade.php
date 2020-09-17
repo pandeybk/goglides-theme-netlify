@@ -22,12 +22,12 @@
 </head>
 <body>
 
-<table style="width: 700px; margin:0 auto;">
+<table style="width: 700px; margin:0 auto; background:#f9f9f9;">
     <tbody>
         <tr>
             <td style="padding: 30px;">
                 <a href="https://www.goglides.com/" target="_blank">
-                    <img src="{{ $companyLogo  }}" width="160px">
+                    <img src="{{ $companyLogo  }}" width="90px">
                 </a>
             </td>
         </tr>
@@ -45,9 +45,9 @@
                     Here is the receipt of your purchase
                 </h3>
                 <div>
-                    <p><strong>Product Name :{{ $product }}</strong></p>
-                    <p><strong>Quantity :{{ $quantity }}</strong></p>
-                    <p><strong>Amount :{{ $amount }}</strong></p>
+                    <p><strong>Product Name : </strong> {{ $product }}</p>
+                    <p><strong>Quantity : </strong> {{ $quantity }}</p>
+                    <p><strong>Amount : </strong> {{ $amount }}</p>
                 </div>
                 <h3>
                     For further information: {{ $merchantMail }}
@@ -57,23 +57,23 @@
     </tbody>
 </table>
 
-<table style="width: 700px; margin:0 auto;background: #fff;text-align: center">
+<table style="width: 700px; margin:0 auto;background: #fff;text-align: center;border-top: 1px solid #FF9800;">
     <tbody>
-    <tr>
-        <td>
-            <ul style="list-style: none;padding-bottom: 30px">
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Facebook</a>
-                </li>
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Twitter</a>
-                </li>
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Instagram</a>
-                </li>
-            </ul>
-        </td>
-    </tr>
+        <tr>
+            <td>
+                <ul style="list-style: none;padding-bottom: 30px">
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Facebook</a>
+                    </li>
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Twitter</a>
+                    </li>
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 

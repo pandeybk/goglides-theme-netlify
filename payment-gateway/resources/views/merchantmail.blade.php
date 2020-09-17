@@ -22,59 +22,59 @@
 </head>
 <body>
 
-<table style="width: 700px; margin:0 auto;">
+<table style="width: 700px; margin:0 auto; background:#f9f9f9;">
     <tbody>
-    <tr>
-        <td style="padding: 30px;">
-            <a href="https://www.goglides.com/" target="_blank">
-                <img src="{{ $companyLogo  }}" width="160px">
-            </a>
-        </td>
-    </tr>
+        <tr>
+            <td style="padding: 30px;">
+                <a href="https://www.goglides.com/" target="_blank">
+                    <img src="{{ $companyLogo  }}" width="90px">
+                </a>
+            </td>
+        </tr>
     </tbody>
 </table>
 
 <table style="width: 700px; margin:0 auto;background: #fff; padding: 30px">
     <tbody>
-    <tr>
-        <td>
-            <h1>
-                Transaction Notificaiton
-            </h1>
-            <h3>
-                Transaction has been made. Details below
-            </h3>
-            <div>
-                <p><strong>Customer Name :{{ $userName }}</strong></p>
-                <p><strong>Customer Phone :{{ $userPhone }}</strong></p>
-                <p><strong>Customer Email :{{ $userMail }}</strong></p>
+        <tr>
+            <td>
+                <h1>
+                    Transaction Notificaiton
+                </h1>
+                <h3>
+                    Transaction has been made. Details below
+                </h3>
+                <div>
+                    <p><strong>Customer Name : </strong> {{ $userName }}</p>
+                    <p><strong>Customer Phone : </strong> {{ $userPhone }}</p>
+                    <p><strong>Customer Email : </strong> {{ $userMail }}</p>
 
-                <p><strong>Product Name :{{ $product }}</strong></p>
-                <p><strong>Quantity :{{ $quantity }}</strong></p>
-                <p><strong>Amount :{{ $amount }}</strong></p>
-            </div>
-        </td>
-    </tr>
+                    <p><strong>Product Name : </strong> {{ $product }}</p>
+                    <p><strong>Quantity : </strong> {{ $quantity }}</p>
+                    <p><strong>Amount : </strong> {{ $amount }}</p>
+                </div>
+            </td>
+        </tr>
     </tbody>
 </table>
 
-<table style="width: 700px; margin:0 auto;background: #fff;text-align: center">
+<table style="width: 700px; margin:0 auto;background: #fff;text-align: center;border-top: 1px solid #FF9800;">
     <tbody>
-    <tr>
-        <td>
-            <ul style="list-style: none;padding-bottom: 30px">
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Facebook</a>
-                </li>
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Twitter</a>
-                </li>
-                <li style="margin:5px">
-                    <a href="#" target="_blank">Instagram</a>
-                </li>
-            </ul>
-        </td>
-    </tr>
+        <tr>
+            <td>
+                <ul style="list-style: none;padding-bottom: 30px">
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Facebook</a>
+                    </li>
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Twitter</a>
+                    </li>
+                    <li style="margin:5px;display:inline-block;">
+                        <a href="#" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
     </tbody>
 </table>
 
