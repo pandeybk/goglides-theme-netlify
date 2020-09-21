@@ -38,11 +38,12 @@ class KhaltiController extends Controller
                     'userPhone'=>$user['mobile']
                     ];
                 Mail::send('merchantMail', $data, function($message) use ($user, $merchant) {
-                    $message->to($merchant['email'])
+                    $message->from(env("MAIL_USERNAME","binod@laravelhugoapi.goglides.com"))
+                    ->to($merchant['email'])
                         ->subject('Purchase Receipt');
                 });
                 Mail::send('userMail', $data, function($message) use ($user, $merchant) {
-                    $message->from($merchant['email'])
+                    $message->from(env("MAIL_USERNAME","binod@laravelhugoapi.goglides.com"))
                         ->to($user['email'])
                         ->subject('Purchase Receipt');
                 });
