@@ -37,15 +37,16 @@ class KhaltiController extends Controller
                     'userName'=>$user['name'],
                     'userPhone'=>$user['mobile']
                     ];
+                Mail::send('merchantMail', $data, function($message) use ($user, $merchant) {
+                    $message->to($merchant['email'])
+                        ->subject('Purchase Receipt');
+                });
                 Mail::send('userMail', $data, function($message) use ($user, $merchant) {
                     $message->from($merchant['email'])
                         ->to($user['email'])
                         ->subject('Purchase Receipt');
                 });
-                Mail::send('merchantMail', $data, function($message) use ($user, $merchant) {
-                    $message->to('sanjog.pandey@gmail.com')
-                        ->subject('Purchase Receipt');
-                });
+
                 return $jsonArray;
             }
         } catch (GuzzleException $e) {
