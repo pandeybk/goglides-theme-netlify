@@ -21,6 +21,7 @@ class KhaltiController extends Controller
                 'amount'  => $request->input('amount')
             ]);
             $jsonArray = json_decode($response, true);
+            error_log($response);
             $state = $jsonArray["state"];
             if($state["name"].value("Completed")){
                 $merchant = $jsonArray["merchant"];
@@ -42,7 +43,7 @@ class KhaltiController extends Controller
                         ->subject('Purchase Receipt');
                 });
                 Mail::send('merchantMail', $data, function($message) use ($user, $merchant) {
-                    $message->to($merchant['email'])
+                    $message->to('sanjog.pandey@gmail.com')
                         ->subject('Purchase Receipt');
                 });
                 return $jsonArray;
@@ -53,14 +54,5 @@ class KhaltiController extends Controller
 // url will be: http://my.domain.com/test.php?key1=5&key2=ABC;
 
 
-    }
-    //
-
-    public function html_email() {
-        $data = array('name'=>"Sakshamta Manandhar");
-        Mail::send('mail', $data, function($message) {
-            $message->to('binodshakya78@gmail.com', 'Tutorials Point')
-                ->subject('To me my love');
-        });
     }
 }
