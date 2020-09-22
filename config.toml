@@ -40,3 +40,6 @@ subcategory = "subcategories"
     companyLogo = "https://cdn.pixabay.com/photo/2013/07/12/14/53/shopping-cart-148959_960_720.png"
     sliderTitle = "First Slide"
     sliderImage = "https://cdn.pixabay.com/photo/2017/08/06/22/52/blouse-2597205_960_720.jpg"
+    contact = 1234567890
+    address = "XYZ street, ABC Country"
+    email = "your@email.com"

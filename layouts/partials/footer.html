@@ -7,13 +7,13 @@
                     <h4 class="footer-title mb-4">Contact</h4>
 
                     <strong>Address</strong>
-                    <p>ABC Street, Kathmandu, Nepal</p>
+                    <p>{{ .Site.Params.address }}</p>
 
                     <strong>Phone:</strong>
-                    <p>+977-9815210214</p>
+                    <p>{{ .Site.Params.contact }}</p>
 
                     <strong>Email:</strong>
-                    <p>info@abc.com</p>
+                    <p>{{ .Site.Params.email }}</p>
 
                 </div>
                 <div class="col-sm-6 col-lg-3">
